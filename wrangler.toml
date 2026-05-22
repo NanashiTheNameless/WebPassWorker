@@ -1,0 +1,24 @@
+name = "webpassworker"
+main = "index.ts"
+compatibility_date = "2026-05-21"
+
+workers_dev = false
+
+[[routes]]
+pattern = "*.example.site/*"
+zone_name = "example.site"
+
+[observability]
+enabled=false
+
+[placement]
+mode="smart"
+
+# [vars]
+# It's safer to set secrets with `wrangler secret put` rather than storing plaintext here.
+# Example placeholder values (replace or use secrets):
+# PASSWORD = "changeme"
+# BASE_SECRET = "changeme-base-secret"
+
+# yarn wrangler secret put PASSWORD
+# yarn wrangler secret put BASE_SECRET

@@ -1,0 +1,8 @@
+{
+  "name": "webpassworker",
+  "packageManager": "yarn@4.12.0",
+  "license": "JSPL",
+  "devDependencies": {
+    "wrangler": "^4.93.1"
+  }
+}
