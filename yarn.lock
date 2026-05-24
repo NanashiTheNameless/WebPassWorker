@@ -561,14 +561,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"WebPassWorker@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "WebPassWorker@workspace:."
-  dependencies:
-    wrangler: "npm:^4.93.1"
-  languageName: unknown
-  linkType: soft
-
 "abbrev@npm:^4.0.0":
   version: 4.0.0
   resolution: "abbrev@npm:4.0.0"
@@ -1009,6 +1001,14 @@ __metadata:
   checksum: 10c0/e8556b4287fcf647f23db790eea2782cc79f182370718680e3aba4753d5fb7177abf5d6df489c8f74f7e3ad6cd554b8623cc01caf3e6f2d5548e69178adb1691
   languageName: node
   linkType: hard
+
+"webpassworker@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "webpassworker@workspace:."
+  dependencies:
+    wrangler: "npm:^4.93.1"
+  languageName: unknown
+  linkType: soft
 
 "which@npm:^6.0.0":
   version: 6.0.1
