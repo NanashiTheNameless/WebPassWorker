@@ -14,6 +14,13 @@ enabled=false
 [placement]
 mode="smart"
 
+[triggers]
+crons = ["17 * * * *"]
+
+[[kv_namespaces]]
+binding = "RATE_LIMIT_KV"
+id = "replace_with_rate_limit_kv_namespace_id"
+
 # [vars]
 # It's safer to set secrets with `wrangler secret put` rather than storing plaintext here.
 # Example placeholder values (replace or use secrets):

@@ -65,3 +65,30 @@ export function makeDenyPage(): string {
 </body>
 </html>`
 }
+
+export function makeRateLimitedPage(retryAfterSeconds: number): string {
+  const minutes = Math.max(1, Math.ceil(retryAfterSeconds / 60))
+  return `<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Too many attempts</title>
+  <style>
+    :root{--bg:#16161D;--fg:#F2F2F2;--muted:rgba(242,242,242,0.78);--border:rgba(242,242,242,0.10)}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--fg);display:flex;align-items:center;justify-content:center}
+    .card{max-width:720px;padding:28px;border-radius:12px;background:var(--bg);border:1px solid var(--border)}
+    h1{margin:0 0 8px;font-size:22px}
+    p{margin:0 0 16px;color:var(--muted)}
+    a{color:var(--fg)}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Too many attempts</h1>
+    <p>Password entry is temporarily limited.<br>Please try again in about ${minutes} minute${minutes === 1 ? '' : 's'}.</p>
+    <a href="/">Return to login</a>
+  </div>
+</body>
+</html>`
+}
