@@ -1,0 +1,30 @@
+{
+  "name": "webpassworker",
+  "version": "0.0.1",
+  "packageManager": "yarn@4.17.0",
+  "license": "https://polyformproject.org/licenses/noncommercial/1.0.0",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "build:worker": "wrangler publish",
+    "clean": "rm -rf dist/",
+    "dev": "tsx watch src/server.ts",
+    "dev:worker": "wrangler dev",
+    "start": "node dist/src/server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "http-proxy": "^1.18.1",
+    "node-cron": "^4.5.0",
+    "redis": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/http-proxy": "^1.17.15",
+    "@types/node": "^26.0.0",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.103.0"
+  }
+}
