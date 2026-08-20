@@ -116,3 +116,14 @@ Where to look
 - KV rate limiter: `enforceRateLimit` in `index.ts`
 
 If you want a CI workflow or helper scripts added, tell me which CI (GitHub/GitLab) and I'll add a ready-to-commit workflow.
+
+## Support My Work
+
+If this project is useful to you, you can support it here:
+
+- [<https://github.com/sponsors/NanashiTheNameless>](<https://github.com/sponsors/NanashiTheNameless>)
+- [<https://buymeacoffee.com/NamelessNanashi>](<https://buymeacoffee.com/NamelessNanashi>)
+- [<https://ko-fi.com/NanashiTheNameless>](<https://ko-fi.com/NanashiTheNameless>)
+- [<https://liberapay.com/NamelessNanashi>](<https://liberapay.com/NamelessNanashi>)
+- [<https://thanks.dev/u/gh/NanashiTheNameless>](<https://thanks.dev/u/gh/NanashiTheNameless>)
+- [<https://throne.com/NamelessNanashi>](<https://throne.com/NamelessNanashi>)
